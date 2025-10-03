@@ -29,8 +29,7 @@ This project compares **supervised** (labeled) and **unsupervised** (clustering/
     │      ├─ FSD50K.dev_audio/        # WAV files for training
     │      ├─ FSD50K.eval_audio/       # WAV files for evaluation
     │      ├─ FSD50K.ground_truth/     # CSV label files
-    │      ├─ FSD50K.metadata/         # JSON metadata
-    │      └─ FSD50K.doc/              # (optional docs)
+    │      └─ FSD50K.metadata/         # JSON metadata    
     └─ processed/                      # any derived features you generate
 ├─ models/                   # trained weights/checkpoints (not committed)
 └─ outputs/                  # figures, logs, metrics (not committed)
