@@ -28,11 +28,6 @@ This project compares **supervised** (labeled) and **unsupervised** (clustering/
 ├─ models/ # trained weights/checkpoints (not committed)
 └─ outputs/ # figures, logs, metrics (not committed)
 
-r
-Copy code
-
-> **Note:** `data/`, `models/`, and `outputs/` are ignored by Git; only `.gitkeep` files are tracked so the folders appear.
-
 ## Setup
 - Python 3.10+ recommended.  
 - (Optional) Create and activate a virtual environment, then install dependencies:
