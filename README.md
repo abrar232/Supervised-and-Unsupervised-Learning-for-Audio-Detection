@@ -29,6 +29,7 @@ This project compares **supervised** (labeled) and **unsupervised** (clustering/
 ├─ models/                   # trained weights/checkpoints (not committed)
 └─ outputs/                  # figures, logs, metrics (not committed)
 
+```
 
 ## Setup
 - Python 3.10+ recommended.  
