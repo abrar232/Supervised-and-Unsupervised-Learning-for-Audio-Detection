@@ -11,22 +11,24 @@ This project compares **supervised** (labeled) and **unsupervised** (clustering/
 - **Status:** Structured as a portfolio-ready repo; data and large artifacts are gitignored
 
 ## Project Structure
+```text
 .
 ├─ README.md
 ├─ requirements.txt
 ├─ .gitignore
 ├─ notebooks/
-│ └─ Thesis_Code.ipynb # main analysis notebook (no outputs saved)
+│  └─ Thesis_Code.ipynb      # main analysis notebook (no outputs saved)
 ├─ src/
-│ ├─ init.py
-│ ├─ utils.py # paths, seeding
-│ ├─ dataio.py # file listing / simple split helpers
-│ └─ features.py # audio features (e.g., log-mel, MFCC)
+│  ├─ __init__.py
+│  ├─ utils.py               # paths, seeding
+│  ├─ dataio.py              # file listing / simple split helpers
+│  └─ features.py            # audio features (e.g., log-mel, MFCC)
 ├─ data/
-│ ├─ raw/ # place original audio here (not committed)
-│ └─ processed/ # derived features (not committed)
-├─ models/ # trained weights/checkpoints (not committed)
-└─ outputs/ # figures, logs, metrics (not committed)
+│  ├─ raw/                   # place original audio here (not committed)
+│  └─ processed/             # derived features (not committed)
+├─ models/                   # trained weights/checkpoints (not committed)
+└─ outputs/                  # figures, logs, metrics (not committed)
+
 
 ## Setup
 - Python 3.10+ recommended.  
