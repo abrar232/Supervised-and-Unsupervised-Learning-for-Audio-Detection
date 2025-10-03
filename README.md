@@ -52,27 +52,27 @@ If unsupervised/anomaly, you can place WAVs directly under data/raw/ (or any fol
 
 Do not commit datasets to GitHub. Keep them locally (they’re ignored by .gitignore).
 
-How to Use
+## How to Use
 Open notebooks/Thesis_Code.ipynb.
 
 Run cells as needed to reproduce feature extraction, training, and evaluation.
 
 If you just want to browse the code or share the repo, you don’t need to run anything. The notebook is kept without outputs so Git diffs stay small.
 
-Results (fill these in with your actual metrics)
+## Results (fill these in with your actual metrics)
 Approach	Features	Model / Method	Metric (e.g., F1/AUC)	Notes
 Supervised	Log-mel	CNN / [framework]		
 Unsupervised	MFCC + k-means	k-means (k=…)		
 Unsupervised	Log-mel	Isolation Forest		
 
-Outputs & Models
+## Outputs & Models
 Trained weights are saved to models/ (ignored by Git).
 
 Figures/logs/metrics go to outputs/ (ignored).
 
 Keep the repo small and fast by not committing large artifacts.
 
-Tips
+## Tips
 In Google Colab: Edit ▸ Clear all outputs before saving the notebook.
 
 Locally, consider nbstripout to automatically remove outputs on commit:
