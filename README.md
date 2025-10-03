@@ -94,10 +94,13 @@ If you just want to browse the code or share the repo, you don’t need to run a
 ## Outputs 
 
 ### Unsupervised embeddings (t-SNE)
-![t-SNE scatter of features](outputs/figures/tsne.png)
+![t-SNE scatter of features](outputs/tsne.png)
 
 ### ROC curve (example class)
-![ROC curve](outputs/figures/roc_curve.png)	
+![ROC curve](outputs/roc_curve.png)	
+
+### Silhouette hist
+![Silhouette hist](outputs/silhouette_hist.png)	
 
 # Models Folder
 
