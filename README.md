@@ -91,15 +91,13 @@ Run cells as needed to reproduce feature extraction, training, and evaluation.
 
 If you just want to browse the code or share the repo, you don’t need to run anything. The notebook is kept without outputs so Git diffs stay small.
 
-## Results 
+## Outputs 
 
-Approach	Features	Model / Method	Metric (e.g., F1/AUC)	Notes
+### Unsupervised embeddings (t-SNE)
+![t-SNE scatter of features](outputs/figures/tsne.png)
 
-Supervised	Log-mel	CNN / [framework]		
-
-Unsupervised	MFCC + k-means	k-means (k=…)		
-
-Unsupervised	Log-mel	Isolation Forest		
+### ROC curve (example class)
+![ROC curve](outputs/figures/roc_curve.png)	
 
 # Models Folder
 
