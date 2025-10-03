@@ -49,15 +49,25 @@ macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 
 ## Data
-Put your audio files under data/raw/.
 
-If supervised (labeled) classification, use class folders:
+This project uses the [FSD50K dataset](https://zenodo.org/record/4060432).  
 
-data/raw/
-  class_a/*.wav
-  class_b/*.wav
-  ...
-If unsupervised/anomaly, you can place WAVs directly under data/raw/ (or any folder structure you prefer). Adjust your notebook paths accordingly.
+To reproduce results:
+
+1. Download the dataset from the link above (requires Zenodo account).
+2. Place the extracted folders under `data/raw/FSD50K/` like so:
+   
+data/raw/FSD50K/
+
+FSD50K.dev_audio/
+
+FSD50K.eval_audio/
+
+FSD50K.ground_truth/
+
+FSD50K.metadata/
+
+FSD50K.doc/
 
 Do not commit datasets to GitHub. Keep them locally (they’re ignored by .gitignore).
 
