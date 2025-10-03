@@ -78,18 +78,27 @@ Run cells as needed to reproduce feature extraction, training, and evaluation.
 
 If you just want to browse the code or share the repo, you don’t need to run anything. The notebook is kept without outputs so Git diffs stay small.
 
-## Results (fill these in with your actual metrics)
+## Results 
+
 Approach	Features	Model / Method	Metric (e.g., F1/AUC)	Notes
+
 Supervised	Log-mel	CNN / [framework]		
+
 Unsupervised	MFCC + k-means	k-means (k=…)		
+
 Unsupervised	Log-mel	Isolation Forest		
 
-## Outputs & Models
-Trained weights are saved to models/ (ignored by Git).
+# Models Folder
 
-Figures/logs/metrics go to outputs/ (ignored).
+This folder is for trained model checkpoints and related metadata.  
+Model weights are **not committed to GitHub** (they are too large).  
 
-Keep the repo small and fast by not committing large artifacts.
+Typical contents after training:
+- `checkpoints/` — multiple saved models during training
+- `best.pth` or `best.keras` — best model checkpoint
+- `config.json` — hyperparameters and training settings
+- `metrics.json` — evaluation metrics
+- `model_card.md` — short description of the experiment
 
 ## Tips
 In Google Colab: Edit ▸ Clear all outputs before saving the notebook.
