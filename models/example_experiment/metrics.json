@@ -1,1 +1,6 @@
-
+{
+  "val_loss": 0.25,
+  "val_f1": 0.57,
+  "val_auc": 0.73,
+  "notes": "Supervised vs unsupervised baseline comparison"
+}
