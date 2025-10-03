@@ -33,6 +33,7 @@ This project compares **supervised** (labeled) and **unsupervised** (clustering/
 - (Optional) Create and activate a virtual environment, then install dependencies:
 
 python -m venv .venv
+
 Windows: .venv\Scripts\activate
 
 macOS/Linux: source .venv/bin/activate
