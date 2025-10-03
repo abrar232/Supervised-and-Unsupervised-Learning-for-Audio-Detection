@@ -31,20 +31,19 @@ This project compares **supervised** (labeled) and **unsupervised** (clustering/
 ## Setup
 - Python 3.10+ recommended.  
 - (Optional) Create and activate a virtual environment, then install dependencies:
-```bash
+
 python -m venv .venv
 # Windows: .venv\Scripts\activate
 # macOS/Linux:
 source .venv/bin/activate
 
 pip install -r requirements.txt
-Data
+
+## Data
 Put your audio files under data/raw/.
 
 If supervised (labeled) classification, use class folders:
 
-bash
-Copy code
 data/raw/
   class_a/*.wav
   class_b/*.wav
@@ -78,7 +77,5 @@ In Google Colab: Edit ▸ Clear all outputs before saving the notebook.
 
 Locally, consider nbstripout to automatically remove outputs on commit:
 
-bash
-Copy code
 pip install nbstripout
 nbstripout --install
