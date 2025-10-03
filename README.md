@@ -19,10 +19,11 @@ This project compares **supervised** (labeled) and **unsupervised** (clustering/
 ├─ notebooks/
 │  └─ Thesis_Code.ipynb      # main analysis notebook (no outputs saved)
 ├─ src/
-│  ├─ __init__.py
-│  ├─ utils.py               # paths, seeding
-│  ├─ dataio.py              # file listing / simple split helpers
-│  └─ features.py            # audio features (e.g., log-mel, MFCC)
+    ├─ __init__.py            # makes "src" importable as a package
+    ├─ utils.py               # paths, seeding, tiny JSON helpers (save/load), timestamps
+    ├─ dataio.py              # finds FSD50K (local or Colab), lists WAVs, loads CSV/metadata
+    ├─ features.py            # audio I/O + features (log-mel, MFCC), simple framing & save
+    └─ splits.py              # deterministic train/val split + writers
 ├─ data/
     ├─ raw/
     │  └─ FSD50K/
@@ -47,6 +48,18 @@ Windows: .venv\Scripts\activate
 macOS/Linux: source .venv/bin/activate
 
 pip install -r requirements.txt
+
+### Quick reference (what to import)
+
+python
+
+from src.utils import project_paths, set_seed
+
+from src.dataio import find_fsd50k_root, list_wavs, load_ground_truth, load_vocabulary
+
+from src.features import load_wav_mono, logmel, mfcc, frame_feature
+
+from src.splits import random_split, write_split_files
 
 ## Data
 
